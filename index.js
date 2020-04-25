@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 	res.sendFile(__dirname + location + '/index.html');
 });
 app.use(location, express.static(__dirname + location));
-let port = 8080;
+let port = process.env.PORT || 8080;
 serv.listen(port);
 
 let SOCKET_LIST = {};
