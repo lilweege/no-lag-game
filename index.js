@@ -2,7 +2,7 @@ let Game = require('./game.js');
 let Player = require('./player.js');
 let lobby = new Game();
 
-console.log("running");
+console.log("runningg");
 let location = '/public';
 let express = require('express');
 let app = express();
